@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/sof.iml" filepath="$PROJECT_DIR$/sof.iml" />
-      <module fileurl="file://$PROJECT_DIR$/android/sof_android.iml" filepath="$PROJECT_DIR$/android/sof_android.iml" />
     </modules>
   </component>
 </project>

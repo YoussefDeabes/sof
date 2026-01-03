@@ -1,0 +1,11 @@
+part of 'internet_connection_bloc.dart';
+
+class InternetConnectionState extends Equatable {
+  final bool isConnected;
+  const InternetConnectionState({
+    required this.isConnected,
+  });
+  @override
+  List<Object?> get props => [isConnected];
+}
+

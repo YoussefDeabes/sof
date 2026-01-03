@@ -1,16 +1,39 @@
-# sof
+# StackOverflow Users App
 
-A new Flutter project.
+A Flutter application that displays StackOverflow users using the StackExchange API.
+The app demonstrates a clean, scalable architecture with BLoC state management.
+
+## Features
+- View a list of StackOverflow users
+- Bookmark / unbookmark users
+- Persist bookmarks across app restarts
+- Filter users by bookmarked only
+- View user reputation details
+- Pull-to-refresh support
+- Robust error handling
+
+## Architecture
+The project follows a **feature-based Clean Architecture**:
+
+- **Data layer**: API managers, models, repositories
+- **Domain layer**: Repository interfaces
+- **Presentation layer**: BLoC + UI
+
+State management is implemented using **flutter_bloc** and **hydrated_bloc**.
+Dependency injection is handled via **GetIt**.
+
+## Tech Stack
+- Flutter
+- BLoC / HydratedBloc
+- Dio
+- GetIt
+- SharedPreferences
+
+## API
+Data is fetched from the StackExchange API:
+https://api.stackexchange.com/docs
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter pub get
+flutter run
