@@ -120,7 +120,7 @@ class _UsersListScreenState extends BaseScreenState<UsersListScreen> {
               onTap: () {
                 if (user.userId != null) {
                   RouteManager.navigateTo(
-                    UserDetailsScreen(userId: user.userId!),
+                    UserDetailsScreen(userId: user.userId!,name: user.displayName ?? ""),
                   );
                 }
               },

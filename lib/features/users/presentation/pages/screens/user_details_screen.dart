@@ -13,8 +13,9 @@ import 'package:sof/features/users/presentation/pages/widgets/reputation_history
 
 class UserDetailsScreen extends BaseScreenWidget {
   final num userId;
+  final String name;
 
-  const UserDetailsScreen({super.key, required this.userId});
+  const UserDetailsScreen({super.key, required this.userId,required this.name});
 
   @override
   BaseState<UserDetailsScreen> screenCreateState() => _UserDetailsScreenState();
@@ -38,7 +39,7 @@ class _UserDetailsScreenState extends BaseScreenState<UserDetailsScreen> {
         backgroundColor: Theme.of(context).colorScheme.surface,
         centerTitle: false,
         title: TextWidget(
-          text: translate(LangKeys.reputationHistory),
+          text: widget.name,
           textStyle: getSemiBoldStyle(fontSize: FontSize.subTitle),
         ),
       ),
